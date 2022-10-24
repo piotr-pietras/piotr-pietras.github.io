@@ -3,7 +3,9 @@
 @import './base/colors.scss';
 @import './base/typography.scss';
 
+//REUSABLE
+@import './reusable/button.scss';
+
 //COMPONENTS
 @import './components/body.scss';
 @import './components/welcome.scss';
-@import './components/button.scss';

@@ -1,4 +1,4 @@
-.welcome-container {
+.welcome-banner {
   position: relative;
   display: flex;
   justify-content: center;
@@ -7,10 +7,23 @@
   background: linear-gradient($red-gradient, $yellow-gradient);
 }
 
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .welcome-text-top {
-  @include font-fasthand-400-xl(white)
+  @include font-fasthand-400-xl(white);
+  margin: 0;
 }
 
 .welcome-text-bottom {
-  @include font-roboto-900-xxl(white)
+  @include font-roboto-900-xxl(white);
+  margin-top: 0;
+  margin-bottom: $margin-xxl;
+}
+
+.welcome-button {
+  @include button-outlined(white);
 }

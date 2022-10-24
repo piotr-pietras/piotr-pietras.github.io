@@ -1,0 +1,10 @@
+@mixin button-outlined($color) {
+    @include font-roboto-900-m($color);
+    padding: $padding-s $padding-l;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px $color solid;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

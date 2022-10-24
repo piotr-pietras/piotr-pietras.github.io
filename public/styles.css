@@ -2,7 +2,7 @@
   padding: 32px;
 }
 
-.welcome-container {
+.welcome-banner {
   position: relative;
   display: flex;
   justify-content: center;
@@ -11,23 +11,40 @@
   background: linear-gradient(#ea8687, #f1d98a);
 }
 
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .welcome-text-top {
   font-size: 64px;
   font-family: "Fasthand";
+  font-weight: 400;
   color: white;
+  margin: 0;
 }
 
 .welcome-text-bottom {
-  font-size: 80px;
+  font-size: 90px;
   font-family: "Roboto";
   font-weight: 900;
   color: white;
+  margin-top: 0;
+  margin-bottom: 64px;
 }
 
-.button-outlined {
-  background-color: rgba(255, 255, 255, 0);
-  padding: 8px;
+.welcome-button {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 900;
   color: white;
+  padding: 8px 24px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px white solid;
+}
+.welcome-button:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

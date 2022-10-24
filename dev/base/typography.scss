@@ -1,11 +1,26 @@
+$font-size-s: 12px;
+$font-size-m: 16px;
+$font-size-l: 32px;
+$font-size-xl: 64px;
+$font-size-xxl: 90px;
+
+
 @mixin font-fasthand-400-xl($color){
-    font-size: 64px;
+    font-size: $font-size-xl;
     font-family: 'Fasthand';
+    font-weight: 400;
     color: $color;
 }
 
 @mixin font-roboto-900-xxl($color){
-    font-size: 80px;
+    font-size: $font-size-xxl;
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: $color;
+}
+
+@mixin font-roboto-900-m($color){
+    font-size: $font-size-m;
     font-family: 'Roboto';
     font-weight: 900;
     color: $color;
