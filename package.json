@@ -1,0 +1,8 @@
+{
+  "name": "goit-project",
+  "version": "0.1.0",
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
+  }
+}
