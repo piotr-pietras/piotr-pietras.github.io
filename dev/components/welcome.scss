@@ -1,0 +1,16 @@
+.welcome-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  background: linear-gradient($red-gradient, $yellow-gradient);
+}
+
+.welcome-text-top {
+  @include font-fasthand-400-xl(white)
+}
+
+.welcome-text-bottom {
+  @include font-roboto-900-xxl(white)
+}

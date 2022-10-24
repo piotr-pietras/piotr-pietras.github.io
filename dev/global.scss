@@ -1,5 +1,9 @@
 //BASE
+@import './base/variables.scss';
 @import './base/colors.scss';
+@import './base/typography.scss';
 
-//MODULES
-@import './modules/buttons.scss';
+//COMPONENTS
+@import './components/body.scss';
+@import './components/welcome.scss';
+@import './components/button.scss';
