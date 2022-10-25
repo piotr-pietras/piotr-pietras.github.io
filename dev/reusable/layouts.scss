@@ -1,0 +1,11 @@
+%layout-base {
+    display: grid;
+    grid-template-columns: repeat(10, 10% [col-start]);
+    grid-template-rows: 600px;
+}
+
+%layout-banner {
+    display: grid;
+    grid-template-columns: repeat(10, 10% [col-start]);
+    grid-template-rows: 50px auto 50px;
+}

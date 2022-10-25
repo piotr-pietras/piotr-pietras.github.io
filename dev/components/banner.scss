@@ -1,29 +1,29 @@
-.welcome-banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
+.banner {
+  @extend %layout-banner;
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 1;
   background: linear-gradient($red-gradient, $yellow-gradient);
 }
 
-.welcome-content {
+.banner-content {
+  grid-column: 1 / span 10;
+  grid-row: 2 / 2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.welcome-text-top {
+.banner-text-top {
   @include font-fasthand-400-xl(white);
   margin: 0;
 }
 
-.welcome-text-bottom {
+.banner-text-bottom {
   @include font-roboto-900-xxl(white);
   margin-top: 0;
   margin-bottom: $margin-xxl;
 }
 
-.welcome-button {
+.banner-button {
   @include button-outlined(white);
 }

@@ -1,3 +1,4 @@
 .body {
+    @extend %layout-base;
     padding: $padding-xl;
 }
