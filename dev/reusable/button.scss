@@ -1,5 +1,5 @@
 @mixin button-outlined($color) {
-    @include font-roboto-900-m($color);
+    @include font-roboto-900-s($color);
     padding: $padding-s $padding-l;
     background-color: rgba(255, 255, 255, 0);
     border: 2px $color solid;

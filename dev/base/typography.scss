@@ -4,24 +4,65 @@ $font-size-l: 32px;
 $font-size-xl: 64px;
 $font-size-xxl: 90px;
 
-
-@mixin font-fasthand-400-xl($color){
-    font-size: $font-size-xl;
-    font-family: 'Fasthand';
-    font-weight: 400;
-    color: $color;
+%fasthand-400 {
+  font-family: "Fasthand";
+  font-weight: 400;
 }
 
-@mixin font-roboto-900-xxl($color){
-    font-size: $font-size-xxl;
-    font-family: 'Roboto';
-    font-weight: 900;
-    color: $color;
+%roboto-900 {
+  font-family: "Roboto";
+  font-weight: 900;
 }
 
-@mixin font-roboto-900-m($color){
-    font-size: $font-size-m;
-    font-family: 'Roboto';
-    font-weight: 900;
-    color: $color;
+%roboto-900 {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+@mixin font-fasthand-400-xl($color) {
+  @extend %fasthand-400;
+  font-size: $font-size-xl;
+  color: $color;
+}
+
+@mixin font-fasthand-400-l($color) {
+  @extend %fasthand-400;
+  font-size: $font-size-l;
+  color: $color;
+}
+
+@mixin font-fasthand-400-m($color) {
+  @extend %fasthand-400;
+  font-size: $font-size-m;
+  color: $color;
+}
+
+@mixin font-roboto-900-xxl($color) {
+  @extend %roboto-900;
+  font-size: $font-size-xxl;
+  color: $color;
+}
+
+@mixin font-roboto-900-l($color) {
+  @extend %roboto-900;
+  font-size: $font-size-l;
+  color: $color;
+}
+
+@mixin font-roboto-900-m($color) {
+  @extend %roboto-900;
+  font-size: $font-size-m;
+  color: $color;
+}
+
+@mixin font-roboto-900-s($color) {
+  @extend %roboto-900;
+  font-size: $font-size-s;
+  color: $color;
+}
+
+@mixin font-roboto-500-s($color) {
+  @extend %roboto-500;
+  font-size: $font-size-s;
+  color: $color;
 }

@@ -1,7 +1,27 @@
+.services-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.services-title-top, .banner-title-top {
+  font-family: "Fasthand";
+  font-weight: 400;
+}
+
+.services-description, .services-name, .services-title-bottom, .banner-button, .banner-title-bottom {
+  font-family: "Roboto";
+  font-weight: 900;
+}
+
+.services-description, .services-name, .services-title-bottom, .banner-button, .banner-title-bottom {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
 .body {
   display: grid;
   grid-template-columns: repeat(10, 10% [col-start]);
-  grid-template-rows: 600px;
+  grid-template-rows: 600px 300px;
 }
 
 .banner {
@@ -10,45 +30,46 @@
   grid-template-rows: 50px auto 50px;
 }
 
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(3, 33.3%);
+}
+
 .body {
-  padding: 32px;
+  padding: 24px;
 }
 
 .banner {
   grid-column: 1/span 10;
-  grid-row: 1/span 1;
+  grid-row: 1;
   background: linear-gradient(#ea8687, #f1d98a);
 }
 
 .banner-content {
   grid-column: 1/span 10;
-  grid-row: 2/2;
+  grid-row: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.banner-text-top {
+.banner-title-top {
   font-size: 64px;
-  font-family: "Fasthand";
-  font-weight: 400;
   color: white;
   margin: 0;
 }
 
-.banner-text-bottom {
+.banner-title-bottom {
   font-size: 90px;
-  font-family: "Roboto";
-  font-weight: 900;
   color: white;
   margin-top: 0;
   margin-bottom: 64px;
 }
 
 .banner-button {
-  font-size: 16px;
-  font-family: "Roboto";
-  font-weight: 900;
+  font-size: 12px;
   color: white;
   padding: 8px 24px;
   background-color: rgba(255, 255, 255, 0);
@@ -56,6 +77,57 @@
 }
 .banner-button:hover {
   cursor: pointer;
+}
+
+.services {
+  grid-column: 3/span 6;
+  grid-row: 2;
+}
+
+.services-title {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-title-top {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+
+.services-title-bottom {
+  font-size: 16px;
+  color: black;
+  margin-top: 0;
+}
+
+.services-icon {
+  margin-right: 24px;
+}
+.services-iconsvg {
+  fill: #97d2c6;
+}
+
+.services-name {
+  font-size: 12px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.services-description {
+  font-size: 12px;
+  color: #b9b9b9;
+  line-height: 1.5;
+}
+
+.services-photography {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
 }
 
 /*# sourceMappingURL=styles.css.map */

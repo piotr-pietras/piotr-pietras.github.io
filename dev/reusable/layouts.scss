@@ -1,11 +1,17 @@
 %layout-base {
     display: grid;
     grid-template-columns: repeat(10, 10% [col-start]);
-    grid-template-rows: 600px;
+    grid-template-rows: 600px 300px;
 }
 
 %layout-banner {
     display: grid;
     grid-template-columns: repeat(10, 10% [col-start]);
     grid-template-rows: 50px auto 50px;
+}
+
+%layout-services {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(3,  33.3%);
 }

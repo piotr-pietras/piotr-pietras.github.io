@@ -1,0 +1,48 @@
+.services {
+  @extend %layout-services;
+  grid-column: 3 / span 6;
+  grid-row: 2;
+}
+
+.services-title {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-title-top {
+  @include font-fasthand-400-m(black);
+  margin: 0;
+}
+
+.services-title-bottom {
+  @include font-roboto-900-m(black);
+  margin-top: 0;
+}
+
+.services-icon {
+  @extend %icon-size;
+  margin-right: $margin-l;
+  &svg {
+    fill: $green;
+  }
+}
+
+.services-name {
+  @include font-roboto-900-s(black);
+  margin-bottom: $margin-m;
+}
+
+.services-description {
+  @include font-roboto-900-s($grey);
+  line-height: 1.5;
+}
+
+.services-photography {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+}

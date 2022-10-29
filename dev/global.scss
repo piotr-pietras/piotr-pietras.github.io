@@ -1,6 +1,7 @@
 //BASE
 @import './base/variables.scss';
 @import './base/colors.scss';
+@import './base/icon.scss';
 @import './base/typography.scss';
 
 //REUSABLE
@@ -10,3 +11,4 @@
 //COMPONENTS
 @import './components/body.scss';
 @import './components/banner.scss';
+@import './components/services.scss';
