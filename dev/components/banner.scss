@@ -1,12 +1,12 @@
 .banner {
   @extend %layout-banner;
-  grid-column: 1 / span 10;
+  grid-column: 1 / span 16;
   grid-row: 1;
   background: linear-gradient($red-gradient, $yellow-gradient);
 }
 
 .banner-content {
-  grid-column: 1 / span 10;
+  grid-column: 6 / 12;
   grid-row: 2;
   display: flex;
   flex-direction: column;
@@ -17,12 +17,14 @@
 .banner-title-top {
   @include font-fasthand-400-xl(white);
   margin: 0;
+  text-align: center;
 }
 
 .banner-title-bottom {
   @include font-roboto-900-xxl(white);
   margin-top: 0;
   margin-bottom: $margin-xxl;
+  text-align: center;
 }
 
 .banner-button {

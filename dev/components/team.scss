@@ -1,0 +1,67 @@
+.team {
+  @extend %layout-team;
+  grid-column: 3 / 15;
+  grid-row: 5;
+}
+
+.team-title {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-title-top {
+  @include font-fasthand-400-m(black);
+  margin: 0;
+  text-align: center;
+}
+
+.team-title-bottom {
+  @include font-roboto-900-m(black);
+  margin-top: 0;
+  text-align: center;
+}
+
+.team-description {
+  @include font-roboto-900-xs($grey);
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  padding-bottom: $padding-xl;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.team-content {
+  margin-right: $margin-xl;
+  grid-column: 1;
+  grid-row: 3;
+  background-color: $green;
+}
+
+.team-avatar {
+  @extend %layout-team-avatar;
+  background: linear-gradient($red-gradient, $yellow-gradient);
+  transition: transform $transition-time;
+  &:hover {
+    transition: transform $transition-time;
+    transform: translate(-$margin-s, -$margin-s);
+  }
+}
+
+.team-avatar-image {
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  object-fit: contain;
+  transition: opacity $transition-time;
+  &:hover {
+    transition: opacity $transition-time;
+    opacity: 0.1;
+  }
+}
+
+.team-avatar-social {
+}

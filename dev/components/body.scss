@@ -1,4 +1,5 @@
 .body {
     @extend %layout-base;
     padding: $padding-l;
+    margin: 0;
 }

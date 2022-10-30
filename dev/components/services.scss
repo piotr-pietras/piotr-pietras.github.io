@@ -1,7 +1,7 @@
 .services {
   @extend %layout-services;
-  grid-column: 3 / span 6;
-  grid-row: 2;
+  grid-column: 3 / 15;
+  grid-row: 3;
 }
 
 .services-title {
@@ -16,33 +16,73 @@
 .services-title-top {
   @include font-fasthand-400-m(black);
   margin: 0;
+  text-align: center;
 }
 
 .services-title-bottom {
   @include font-roboto-900-m(black);
   margin-top: 0;
+  text-align: center;
 }
 
 .services-icon {
   @extend %icon-size;
   margin-right: $margin-l;
-  &svg {
-    fill: $green;
-  }
 }
 
 .services-name {
-  @include font-roboto-900-s(black);
+  @include font-roboto-900-xs(black);
   margin-bottom: $margin-m;
 }
 
 .services-description {
-  @include font-roboto-900-s($grey);
+  @include font-roboto-900-xs($grey);
   line-height: 1.5;
 }
 
+%services-element {
+  display: flex;
+  padding-right: $margin-l;
+  padding-bottom: $margin-l;
+}
+
 .services-photography {
+  @extend %services-element;
   grid-column: 1;
   grid-row: 2;
+}
+
+.services-design {
+  @extend %services-element;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+}
+
+.services-creativity {
+  @extend %services-element;
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+}
+
+.services-seo {
+  @extend %services-element;
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+}
+
+.services-css {
+  @extend %services-element;
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+}
+
+.services-digital {
+  @extend %services-element;
+  grid-column: 3;
+  grid-row: 3;
   display: flex;
 }

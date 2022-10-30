@@ -1,5 +1,6 @@
-$font-size-s: 12px;
-$font-size-m: 16px;
+$font-size-xs: 12px;
+$font-size-s: 16px;
+$font-size-m: 24px;
 $font-size-l: 32px;
 $font-size-xl: 64px;
 $font-size-xxl: 90px;
@@ -37,6 +38,12 @@ $font-size-xxl: 90px;
   color: $color;
 }
 
+@mixin font-fasthand-400-s($color) {
+  @extend %fasthand-400;
+  font-size: $font-size-s;
+  color: $color;
+}
+
 @mixin font-roboto-900-xxl($color) {
   @extend %roboto-900;
   font-size: $font-size-xxl;
@@ -60,9 +67,20 @@ $font-size-xxl: 90px;
   font-size: $font-size-s;
   color: $color;
 }
+@mixin font-roboto-900-xs($color) {
+  @extend %roboto-900;
+  font-size: $font-size-xs;
+  color: $color;
+}
 
 @mixin font-roboto-500-s($color) {
   @extend %roboto-500;
   font-size: $font-size-s;
+  color: $color;
+}
+
+@mixin font-roboto-500-xs($color) {
+  @extend %roboto-500;
+  font-size: $font-size-xs;
   color: $color;
 }

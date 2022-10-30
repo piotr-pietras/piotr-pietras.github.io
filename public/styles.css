@@ -3,51 +3,69 @@
   height: 32px;
 }
 
-.services-title-top, .banner-title-top {
+.team-title-top, .services-title-top, .banner-title-top {
   font-family: "Fasthand";
   font-weight: 400;
 }
 
-.services-description, .services-name, .services-title-bottom, .banner-button, .banner-title-bottom {
+.team-description, .team-title-bottom, .services-description, .services-name, .services-title-bottom, .banner-button, .banner-title-bottom {
   font-family: "Roboto";
   font-weight: 900;
 }
 
-.services-description, .services-name, .services-title-bottom, .banner-button, .banner-title-bottom {
+.team-description, .team-title-bottom, .services-description, .services-name, .services-title-bottom, .banner-button, .banner-title-bottom {
   font-family: "Roboto";
   font-weight: 500;
 }
 
+.marker-line {
+  width: 50px;
+  height: 3px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background-color: #f48484;
+}
+
 .body {
   display: grid;
-  grid-template-columns: repeat(10, 10% [col-start]);
-  grid-template-rows: 600px 300px;
+  grid-template-columns: repeat(16, 6.25%);
+  grid-template-rows: auto 24px auto 24px auto;
 }
 
 .banner {
   display: grid;
-  grid-template-columns: repeat(10, 10% [col-start]);
+  grid-template-columns: repeat(16, 6.25%);
   grid-template-rows: 50px auto 50px;
 }
 
 .services {
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
-  grid-template-rows: repeat(3, 33.3%);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+}
+
+.team-avatar {
+  display: grid;
+  grid-template-rows: auto 50px auto;
 }
 
 .body {
   padding: 24px;
+  margin: 0;
 }
 
 .banner {
-  grid-column: 1/span 10;
+  grid-column: 1/span 16;
   grid-row: 1;
   background: linear-gradient(#ea8687, #f1d98a);
 }
 
 .banner-content {
-  grid-column: 1/span 10;
+  grid-column: 6/12;
   grid-row: 2;
   display: flex;
   flex-direction: column;
@@ -59,6 +77,7 @@
   font-size: 64px;
   color: white;
   margin: 0;
+  text-align: center;
 }
 
 .banner-title-bottom {
@@ -66,10 +85,11 @@
   color: white;
   margin-top: 0;
   margin-bottom: 64px;
+  text-align: center;
 }
 
 .banner-button {
-  font-size: 12px;
+  font-size: 16px;
   color: white;
   padding: 8px 24px;
   background-color: rgba(255, 255, 255, 0);
@@ -80,8 +100,8 @@
 }
 
 .services {
-  grid-column: 3/span 6;
-  grid-row: 2;
+  grid-column: 3/15;
+  grid-row: 3;
 }
 
 .services-title {
@@ -94,22 +114,21 @@
 }
 
 .services-title-top {
-  font-size: 16px;
+  font-size: 24px;
   color: black;
   margin: 0;
+  text-align: center;
 }
 
 .services-title-bottom {
-  font-size: 16px;
+  font-size: 24px;
   color: black;
   margin-top: 0;
+  text-align: center;
 }
 
 .services-icon {
   margin-right: 24px;
-}
-.services-iconsvg {
-  fill: #97d2c6;
 }
 
 .services-name {
@@ -124,10 +143,111 @@
   line-height: 1.5;
 }
 
+.services-digital, .services-css, .services-seo, .services-creativity, .services-design, .services-photography {
+  display: flex;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
 .services-photography {
   grid-column: 1;
   grid-row: 2;
+}
+
+.services-design {
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
+}
+
+.services-creativity {
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+}
+
+.services-seo {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+}
+
+.services-css {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+}
+
+.services-digital {
+  grid-column: 3;
+  grid-row: 3;
+  display: flex;
+}
+
+.team {
+  grid-column: 3/15;
+  grid-row: 5;
+}
+
+.team-title {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-title-top {
+  font-size: 24px;
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+
+.team-title-bottom {
+  font-size: 24px;
+  color: black;
+  margin-top: 0;
+  text-align: center;
+}
+
+.team-description {
+  font-size: 12px;
+  color: #b9b9b9;
+  grid-column: 1/span 3;
+  grid-row: 2;
+  padding-bottom: 32px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.team-content {
+  margin-right: 32px;
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #94e4d4;
+}
+
+.team-avatar {
+  background: linear-gradient(#ea8687, #f1d98a);
+  transition: transform 0.2s;
+}
+.team-avatar:hover {
+  transition: transform 0.2s;
+  transform: translate(-8px, -8px);
+}
+
+.team-avatar-image {
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  object-fit: contain;
+  transition: opacity 0.2s;
+}
+.team-avatar-image:hover {
+  transition: opacity 0.2s;
+  opacity: 0.1;
 }
 
 /*# sourceMappingURL=styles.css.map */
