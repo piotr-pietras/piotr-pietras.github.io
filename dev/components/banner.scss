@@ -2,7 +2,7 @@
   @extend %layout-banner;
   grid-column: 1 / span 16;
   grid-row: 1;
-  background: linear-gradient($red-gradient, $yellow-gradient);
+  background: linear-gradient($start-gradient, $end-gradient);
 }
 
 .banner-content {

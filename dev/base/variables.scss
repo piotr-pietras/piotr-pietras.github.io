@@ -10,9 +10,14 @@ $margin-l: 24px;
 $margin-m: 16px;
 $margin-s: 8px;
 
+$border: solid 1px $powder;
+
 $transition-time: 0.2s;
 
 $image-hawk: url(./static/hawk.webp);
 $image-christopher: url(./static/images/christopher.jpg);
 $image-matthew: url(./static/images/matthew.jpg);
 $image-michael: url(./static/images/michael.jpg);
+
+$icon-facebook: url(./static/icons/facebook.svg);
+$icon-facebook-hovered: url(./static/icons/facebook-hovered.svg);

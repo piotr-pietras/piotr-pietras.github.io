@@ -28,15 +28,19 @@
 .services-icon {
   @extend %icon-size;
   margin-right: $margin-l;
+  svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .services-name {
-  @include font-roboto-900-xs(black);
+  @include font-roboto-500-xs(black);
   margin-bottom: $margin-m;
 }
 
 .services-description {
-  @include font-roboto-900-xs($grey);
+  @include font-roboto-500-xs($grey);
   line-height: 1.5;
 }
 

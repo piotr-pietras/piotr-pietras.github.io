@@ -1,0 +1,26 @@
+.footer {
+  @extend %layout-services;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 3 / 15;
+  grid-row: 7;
+  padding-top: $padding-s;
+  border-top: $border;
+}
+
+.footer-text {
+  @include font-roboto-500-xs(black);
+}
+
+.footer-subscribe {
+  display: flex;
+}
+
+.footer-input {
+  border: $border;
+}
+
+.footer-button {
+  @include button-filled(white, $green);
+}
