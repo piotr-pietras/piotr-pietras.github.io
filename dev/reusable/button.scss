@@ -3,14 +3,13 @@
   padding: $padding-s $padding-l;
   background-color: rgba(255, 255, 255, 0);
   border: 2px $color solid;
-
   &:hover {
     cursor: pointer;
   }
 }
 
-@mixin button-filled($color, $color-fill) {
-  @include font-roboto-500-xs($color);
+@mixin button-filled($color-text, $color-fill) {
+  @include font-roboto-500-xs($color-text);
   padding: $padding-s $padding-l;
   background-color: $color-fill;
   border: unset;
@@ -19,8 +18,8 @@
   }
 }
 
-@mixin button-underscored($color, $color-hover) {
-  @include font-roboto-900-xs($color);
+@mixin button-underscored($color-text, $color-hover) {
+  @include font-roboto-900-xs($color-text);
   padding: $padding-s 0;
   background-color: rgba(255, 255, 255, 0);
   border: unset;
@@ -28,5 +27,21 @@
     cursor: pointer;
     color: $color-hover;
     border-bottom: solid 2px $color-hover;
+  }
+}
+
+%button-social {
+  background-color: $yellow;
+  padding: $padding-s;
+  &:hover {
+    background-color: $pink;
+    cursor: pointer;
+    svg {
+      fill: white;
+    }
+  }
+  svg {
+    @extend %icon-size-s;
+    fill: $pink;
   }
 }
