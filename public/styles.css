@@ -1,6 +1,11 @@
-.services-icon {
+.services-icon svg {
   width: 32px;
   height: 32px;
+}
+
+.navigator-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .team-title-top, .services-title-top, .banner-title-top {
@@ -8,7 +13,7 @@
   font-weight: 400;
 }
 
-.team-title-bottom, .services-title-bottom, .banner-button, .banner-title-bottom {
+.team-title-bottom, .services-title-bottom, .banner-button, .banner-title-bottom, .navigator-icon, .navigator-button, .navigator-title {
   font-family: "Roboto";
   font-weight: 900;
 }
@@ -35,7 +40,7 @@
 .banner {
   display: grid;
   grid-template-columns: repeat(16, 6.25%);
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 50px 64px auto 64px 50px;
 }
 
 .footer, .services {
@@ -58,6 +63,59 @@
   margin: 0;
 }
 
+.navigator {
+  grid-column: 3/15;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigator-title {
+  font-size: 32px;
+  color: white;
+  margin: 0;
+}
+
+.navigator-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navigator-button {
+  font-size: 12px;
+  color: white;
+  padding: 8px 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: unset;
+}
+.navigator-button:hover {
+  cursor: pointer;
+  color: #fce48c;
+  border-bottom: solid 2px #fce48c;
+}
+
+.navigator-icon {
+  font-size: 12px;
+  color: white;
+  padding: 8px 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: unset;
+  padding: 0;
+}
+.navigator-icon:hover {
+  cursor: pointer;
+  color: #fce48c;
+  border-bottom: solid 2px #fce48c;
+}
+.navigator-icon svg {
+  fill: white;
+}
+.navigator-icon:hover svg {
+  fill: #fce48c;
+}
+
 .banner {
   grid-column: 1/span 16;
   grid-row: 1;
@@ -66,7 +124,7 @@
 
 .banner-content {
   grid-column: 6/12;
-  grid-row: 2;
+  grid-row: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,8 +189,7 @@
   margin-right: 24px;
 }
 .services-icon svg {
-  width: 32px;
-  height: 32px;
+  fill: #94e4d4;
 }
 
 .services-name {
@@ -291,11 +348,11 @@
 }
 
 .footer-button {
-  all: unset;
   font-size: 12px;
   color: white;
   padding: 8px 24px;
   background-color: #94e4d4;
+  border: unset;
 }
 .footer-button:hover {
   cursor: pointer;

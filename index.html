@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,9 +18,50 @@
     <link rel="stylesheet" href="public/styles.css" />
     <title>MoGo</title>
   </head>
+
+  <svg>
+    <defs>
+      <g id="shape">
+          <rect x="50" y="50" width="50" height="50" />
+          <circle cx="50" cy="50" r="50" />
+      </g>
+    </defs>
+  </svg>
+
   <body class="body">
 
       <div class="banner">
+        <div class="navigator">
+         <h1 class="navigator-title">MoGo</h1>
+         <div class="navigator-content">
+          <a class="navigator-button">
+            ABOUT
+          </a>
+          <a class="navigator-button">
+            SERVICE
+          </a>
+          <a class="navigator-button">
+            WORK
+          </a>
+          <a class="navigator-button">
+            BLOG
+          </a>
+          <a class="navigator-button">
+            CONTACT
+          </a>
+          <a class="navigator-icon">
+              <svg >
+                <use href="./public/static/icons/cart.svg#main"></use>
+              </svg>
+          </a>
+          <a class="navigator-icon">
+            <svg >
+              <use href="./public/static/icons/search.svg#main"></use>
+            </svg>
+          </a>
+         </div>
+        </div>
+
         <div class="banner-content">
           <h1 class="banner-title-top">Creative Template</h1>
           <h2 class="banner-title-bottom">WELCOME </br> TO MOGO</h2>
@@ -36,23 +78,34 @@
           <div class="marker-line"></div>
         </div>
 
-
         <div class="services-photography">
-          <img class="services-icon" src="./public/static/icons/clock.svg"/>
+          <div class="services-icon">
+            <svg >
+              <use href="./public/static/icons/clock.svg#main"></use>
+            </svg>
+          </div>
           <div>
             <div class="services-name">PHOTOGRAPHY</div>
             <div class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
           </div>
         </div>
         <div class="services-design">
-          <img class="services-icon" src="./public/static/icons/design.svg"/>
+          <div class="services-icon">
+            <svg >
+              <use href="./public/static/icons/design.svg#main"></use>
+            </svg>
+          </div>
           <div>
             <div class="services-name">WEB DESIGN</div>
             <div class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
           </div>
         </div>
         <div class="services-creativity">
-          <img class="services-icon" src="./public/static/icons/monitor.svg"/>
+          <div class="services-icon">
+            <svg >
+              <use href="./public/static/icons/monitor.svg#main"></use>
+            </svg>
+          </div>
           <div>
             <div class="services-name">CREATIVITY</div>
             <div class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
@@ -60,21 +113,33 @@
         </div>
 
         <div class="services-seo">
-          <img class="services-icon" src="./public/static/icons/book.svg"/>
+          <div class="services-icon">
+            <svg >
+              <use href="./public/static/icons/book.svg#main"></use>
+            </svg>
+          </div>
           <div>
             <div class="services-name">SEO</div>
             <div class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
           </div>
         </div>
         <div class="services-css">
-          <img class="services-icon" src="./public/static/icons/home.svg"/>
+          <div class="services-icon">
+            <svg >
+              <use href="./public/static/icons/book.svg#main"></use>
+            </svg>
+          </div>
           <div>
             <div class="services-name">CSS/HTML</div>
             <div class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
           </div>
         </div>
         <div class="services-digital">
-          <img class="services-icon" src="./public/static/icons/digital.svg"/>
+          <div class="services-icon">
+            <svg >
+              <use href="./public/static/icons/digital.svg#main"></use>
+            </svg>
+          </div>
           <div>
             <div class="services-name">DIGITAL</div>
             <div class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>

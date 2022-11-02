@@ -26,11 +26,10 @@
 }
 
 .services-icon {
-  @extend %icon-size;
   margin-right: $margin-l;
   svg {
-    width: 32px;
-    height: 32px;
+    @extend %icon-size-l;
+    fill: $green;
   }
 }
 

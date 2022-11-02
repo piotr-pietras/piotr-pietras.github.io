@@ -7,7 +7,7 @@
 %layout-banner {
   display: grid;
   grid-template-columns: repeat(16, 6.25%);
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 50px $margin-xxl auto $margin-xxl 50px;
 }
 
 %layout-services {

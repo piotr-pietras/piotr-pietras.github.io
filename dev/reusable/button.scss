@@ -10,20 +10,23 @@
 }
 
 @mixin button-filled($color, $color-fill) {
-  all: unset;
   @include font-roboto-500-xs($color);
   padding: $padding-s $padding-l;
   background-color: $color-fill;
+  border: unset;
   &:hover {
     cursor: pointer;
   }
 }
 
-%button-icon {
-  @extend %icon-size;
-  background-color: $yellow;
+@mixin button-underscored($color, $color-hover) {
+  @include font-roboto-900-xs($color);
+  padding: $padding-s 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: unset;
   &:hover {
-    background-color: $pink;
     cursor: pointer;
+    color: $color-hover;
+    border-bottom: solid 2px $color-hover;
   }
 }
