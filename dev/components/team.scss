@@ -55,7 +55,7 @@
 
 .team-avatar {
   @extend %layout-team-avatar;
-  background: linear-gradient($start-gradient, $end-gradient);
+  background: $gradient;
   transition: transform $transition-time;
   &:hover {
     transition: transform $transition-time;

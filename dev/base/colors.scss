@@ -1,8 +1,17 @@
 $start-gradient: #ea8687;
 $end-gradient: #f1d98a;
 
+$start-gradient-transparent: #ea8688ee;
+$end-gradient-transparent: #f1d98aee;
+
 $grey: #b9b9b9;
 $powder: #f4f4f4;
 $green: #94e4d4;
 $pink: #f48484;
 $yellow: #fce48c;
+
+$gradient: linear-gradient($start-gradient, $end-gradient);
+$gradient-transparent: linear-gradient(
+  $start-gradient-transparent,
+  $end-gradient-transparent
+);

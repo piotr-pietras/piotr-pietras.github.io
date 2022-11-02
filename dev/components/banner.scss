@@ -1,8 +1,8 @@
 .banner {
   @extend %layout-banner;
-  grid-column: 1 / span 16;
+  grid-column: 1 / 17;
   grid-row: 1;
-  background: linear-gradient($start-gradient, $end-gradient);
+  background: $gradient-transparent;
 }
 
 .banner-content {
@@ -12,6 +12,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.banner-image {
+  grid-column: 1 / 17;
+  grid-row: 1 / 6;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .banner-title-top {
