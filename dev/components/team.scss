@@ -35,26 +35,30 @@
 }
 
 @mixin team-content($column) {
+  @extend %layout-team-content;
   margin-right: $margin-xl;
   grid-column: $column;
   grid-row: 3;
-  background-color: $green;
 }
 
 .team-content-1 {
-  @include team-content(1)
+  @include team-content(1);
 }
 
 .team-content-2 {
-  @include team-content(2)
+  @include team-content(2);
 }
 
 .team-content-3 {
-  @include team-content(3)
+  @include team-content(3);
+}
+
+.team-avatar-background {
+  grid-row: 1 / 5;
+  background-color: $green;
 }
 
 .team-avatar {
-  @extend %layout-team-avatar;
   background: $gradient;
   transition: transform $transition-time;
   &:hover {
@@ -65,8 +69,6 @@
 
 .team-avatar-image {
   width: 100%;
-  grid-column: 1;
-  grid-row: 1 / span 5;
   transition: opacity $transition-time;
   &:hover {
     transition: opacity $transition-time;
@@ -74,8 +76,17 @@
   }
 }
 
-// .team-name {
-//   @include font-roboto-900-s(black);
-//   text-align: center;
-//   grid-row: 6;
-// }
+.team-name {
+  @include font-roboto-500-xs(black);
+  margin-top: $margin-l;
+  text-align: center;
+  grid-row: 6;
+}
+
+.team-role {
+  @include font-roboto-300-xs($grey);
+  margin-top: $margin-s;
+  text-align: center;
+  font-style: italic;
+  grid-row: 7;
+}
