@@ -1,0 +1,18 @@
+@mixin underscore-interactive($color-hover) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    background: $color-hover;
+    transition: width $transition-time ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

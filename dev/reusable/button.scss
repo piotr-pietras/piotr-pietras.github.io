@@ -3,6 +3,7 @@
   padding: $padding-s $padding-l;
   background-color: rgba(255, 255, 255, 0);
   border: 2px $color solid;
+  text-decoration: none;
   &:hover {
     cursor: pointer;
   }
@@ -20,13 +21,14 @@
 
 @mixin button-underscored($color-text, $color-hover) {
   @include font-roboto-900-xs($color-text);
+  @include underscore-interactive($color-hover);
   padding: $padding-s 0;
   background-color: rgba(255, 255, 255, 0);
   border: unset;
+
   &:hover {
     cursor: pointer;
     color: $color-hover;
-    border-bottom: solid 2px $color-hover;
   }
 }
 
